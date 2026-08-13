@@ -1,0 +1,212 @@
+/* --- BASE & TYPOGRAPHY --- */
+:root {
+  --bg-color: #f7f6f2;       /* Warm off-white / newsprint tone */
+  --text-color: #111111;     /* High contrast dark charcoal */
+  --border-color: #222222;   /* Crisp structural lines */
+  --accent-color: #0055cc;   /* Minimal link blue or dark accent */
+  --font-mono: "Courier New", Courier, monospace;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+/* Container mimicking a boxed page layout */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+/* --- HEADER & THESIS BOX --- */
+.site-header {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.site-title {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.author-meta {
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.thesis-box {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: var(--bg-color);
+}
+
+.thesis-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* --- HERO IMAGE --- */
+.hero-image-wrapper {
+  margin-bottom: 2rem;
+  border: 1px solid var(--border-color);
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- INQUIRIES & LISTS --- */
+.content-section {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.inquiry-list {
+  list-style: none;
+}
+
+.inquiry-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 0.75rem;
+}
+
+summary {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+}
+
+summary:hover {
+  text-decoration: underline;
+}
+
+.bullet {
+  font-family: var(--font-mono);
+  margin-right: 0.5rem;
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  background: var(--text-color);
+  color: #ffffff;
+  padding: 2px 6px;
+  margin-left: 0.5rem;
+}
+
+.inquiry-details {
+  padding: 0.75rem 0 0.5rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.output-list {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.action-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 0.3rem 0.6rem;
+  background-color: var(--bg-color);
+}
+
+.btn:hover {
+  background-color: var(--text-color);
+  color: #ffffff;
+}
+
+/* --- FIELDNOTES STREAM --- */
+.fieldnote-entry {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: var(--bg-color);
+}
+
+.fieldnote-meta {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* --- ETHICS BOX & FOOTER --- */
+.ethics-box {
+  border-top: 2px solid var(--border-color);
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.ethics-title {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+  body { padding: 0.5rem; }
+  .container { padding: 1rem; }
+  .site-footer { flex-direction: column; gap: 0.5rem; }
+}
