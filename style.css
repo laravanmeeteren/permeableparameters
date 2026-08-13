@@ -178,6 +178,33 @@ details[open] summary::before {
   text-decoration: none;
 }
 
+/* Link Hover Thumbnail Preview */
+.hover-thumb {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-thumb .thumb-preview {
+  display: none;
+  position: absolute;
+  bottom: 125%; /* Displays the thumbnail floating just above the link */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 240px; /* Small, discrete preview width */
+  height: auto;
+  border: 1px solid #111111;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  padding: 4px;
+  z-index: 100;
+  pointer-events: none; /* Prevents floating image from blocking clicks */
+}
+
+/* Show preview image on hover */
+.hover-thumb:hover .thumb-preview {
+  display: block;
+}
+
 /* Badges & Buttons */
 .badge {
   font-family: monospace;
