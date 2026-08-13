@@ -1,4 +1,6 @@
-/* Base Resets & Global Image Bounds */
+/* ==========================================================================
+   Base Resets & Global Styles
+   ========================================================================== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,7 +29,9 @@ body {
   padding: 2.5rem;
 }
 
-/* Site Header */
+/* ==========================================================================
+   Header & Core Thesis Section
+   ========================================================================== */
 .site-header {
   margin-bottom: 1.5rem;
 }
@@ -54,7 +58,6 @@ body {
   color: #444444;
 }
 
-/* Core Thesis Box */
 .thesis-box {
   border: 1px solid #111111;
   padding: 1rem 1.25rem;
@@ -75,8 +78,12 @@ body {
   margin-right: 0.5rem;
 }
 
-/* Hero Portrait Wrapper — Preserves full photo proportions */
+/* ==========================================================================
+   Hero Portrait & Photographer Overlay
+   ========================================================================== */
 .hero-image-wrapper {
+  position: relative;
+  width: 100%;
   border: 1px solid #111111;
   margin-bottom: 2.5rem;
   background-color: #ffffff;
@@ -84,12 +91,26 @@ body {
 
 .hero-image {
   width: 100%;
-  max-height: 540px; /* Constrains total height without cropping sides */
+  max-height: 540px; /* Constrains height without cropping sides */
   object-fit: cover;
   display: block;
 }
 
-/* Section Headings */
+.photo-overlay {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-family: monospace;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* ==========================================================================
+   Section Headings & Inquiries Accordion
+   ========================================================================== */
 .section-title {
   font-family: monospace;
   font-size: 1.1rem;
@@ -102,7 +123,6 @@ body {
   margin-bottom: 3rem;
 }
 
-/* Inquiries List & Collapsible Accordion */
 .inquiry-list {
   list-style: none;
 }
@@ -155,7 +175,7 @@ details[open] summary::before {
   margin-bottom: 0.35rem;
 }
 
-/* Clean Monochrome Link Styling (Kills default blue/purple) */
+/* Clean Monochrome Links */
 .output-list a,
 .inquiry-details a,
 .site-footer a {
@@ -168,7 +188,7 @@ details[open] summary::before {
 .output-list a:visited,
 .inquiry-details a:visited,
 .site-footer a:visited {
-  color: #111111; /* Keeps visited links dark charcoal */
+  color: #111111;
 }
 
 .output-list a:hover,
@@ -178,7 +198,7 @@ details[open] summary::before {
   text-decoration: none;
 }
 
-/* Link Hover Thumbnail Preview — Positioned cleanly to the side */
+/* Hover Thumbnail Preview */
 .hover-thumb {
   position: relative;
   display: inline-block;
@@ -188,7 +208,7 @@ details[open] summary::before {
   display: none;
   position: absolute;
   top: -20px;
-  left: 105%; /* Displays thumbnail cleanly to the RIGHT of link */
+  left: 105%; /* Displays thumbnail to the right of the link */
   width: 250px;
   height: auto;
   border: 1px solid #111111;
@@ -199,12 +219,11 @@ details[open] summary::before {
   pointer-events: none;
 }
 
-/* Show preview image on hover */
 .hover-thumb:hover .thumb-preview {
   display: block;
 }
 
-/* Badges & Buttons */
+/* Badges & Action Buttons */
 .badge {
   font-family: monospace;
   font-size: 0.7rem;
@@ -237,7 +256,9 @@ details[open] summary::before {
   color: #ffffff;
 }
 
-/* Verbatim Fieldnotes Stream */
+/* ==========================================================================
+   Fieldnotes Stream & Ethics Box
+   ========================================================================== */
 .fieldnotes-section {
   border-top: 1px solid #111111;
   padding-top: 2rem;
@@ -272,7 +293,6 @@ details[open] summary::before {
   line-height: 1.55;
 }
 
-/* Ethics Box */
 .ethics-box {
   border: 1px solid #111111;
   padding: 1.25rem;
@@ -303,7 +323,9 @@ details[open] summary::before {
   font-family: monospace;
 }
 
-/* Mobile Responsiveness */
+/* ==========================================================================
+   Mobile Responsiveness
+   ========================================================================== */
 @media (max-width: 680px) {
   .container {
     padding: 1.25rem;
@@ -321,37 +343,5 @@ details[open] summary::before {
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
-  }
-  .image-credit {
-  font-family: monospace; /* Matches your site's tech/archive font */
-  font-size: 0.75rem;
-  color: #666;             /* Soft grey so it doesn't draw eyes away from the photo */
-  text-align: right;
-  margin-top: 0.35rem;      /* Light breathing room under the image border */
-  margin-bottom: 1.5rem;   /* Space before "INQUIRIES & FIELDWORK" */
-  }
-
-  /* Container holds relative position for overlay placement */
-.hero-image-wrapper {
-  position: relative;
-  display: inline-block; /* or width: 100%; depending on your setup */
-  width: 100%;
-}
-
-.hero-image-wrapper img {
-  display: block;
-  width: 100%;
-}
-
-/* The overlay caption inside the image */
-.photo-overlay {
-  position: absolute;
-  bottom: 8px;
-  right: 10px;
-  font-family: monospace;
-  font-size: 0.65rem;          /* Very small and subtle */
-  color: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); /* Ensures readability against light background elements */
-  pointer-events: none;
   }
 }
