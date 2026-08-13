@@ -268,4 +268,23 @@ details[open] summary::before {
     flex-direction: column;
     gap: 0.5rem;
   }
+  /* Clean Monochrome Link Styling */
+.output-list a,
+.inquiry-details a {
+  color: #111111;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.output-list a:visited,
+.inquiry-details a:visited {
+  color: #111111; /* Keeps visited links dark instead of turning default purple */
+}
+
+.output-list a:hover,
+.inquiry-details a:hover {
+  color: #555555;
+  text-decoration: none;
+}
 }
