@@ -1,32 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            font-family: 'Courier New', monospace;
-            background-color: #5e17eb;
-            color: #ffffff;
-            text-align: left;
-            padding: 20px;
-            margin: 0;
-        }
-        p {
-            font-size: 1.2em;
-            max-width: 1000px;
-            margin-left: 0;
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Search Engine Setup for Google -->
+  <title>Text-Based Commoning — Research & Practice by Lara van Meeteren</title>
+  <meta name="description" content="Research and practice exploring infrastructures of art, cultural commoning, collaborative publishing, and fieldnotes across Hong Kong and Bangkok.">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>This website is in the making. At some point, something will take shape here.</p>
-</body>
-   <!-- Additional lines with minimalist links and line break -->
-    <div class="link-container">
-        <p>For now, go <a href="https://inappropriatebookclub.com/" target="_blank">here</a> for projects,<br>go <a href="https://www.researchgate.net/profile/Lara-Meeteren" target="_blank">here</a> for research and writing, <br> or <a href="https://ava.hkbu.edu.hk/en/postgraduate/student/lara-van-meeteren" target="_blank">here</a> for currrent institutional surroundings.</p>
-    </div>
+
+  <main class="container">
+    
+    <!-- Site Header / Identity -->
+    <header class="site-header">
+      <h1 class="site-title">TEXTBASEDCOMMONING.COM</h1>
+      <p class="author-meta">Initiated by Lara van Meeteren</p>
+    </header>
+
+    <!-- Core Thesis / Hero Banner -->
+    <section class="thesis-box">
+      <p class="thesis-text">
+        <span class="label">CORE THESIS:</span> 
+        Infrastructures of Art • Forms of Commoning • Collective Knowledge Production
+      </p>
+    </section>
+
+    <!-- Hero Portrait (Single Image) -->
+    <figure class="hero-image-wrapper">
+      <img src="images/lara-portrait.jpg" alt="Lara van Meeteren sitting by a studio window" class="hero-image">
+    </figure>
+
+    <!-- Main Content: Inquiries & Fieldwork -->
+    <section class="content-section">
+      <h2 class="section-title">INQUIRIES & FIELDWORK</h2>
+
+      <ul class="inquiry-list">
+        
+        <!-- Inquiry 1 -->
+        <li class="inquiry-item">
+          <details>
+            <summary>
+              <strong>Inquiry 1: Perennial Art Events in Asia</strong>
+            </summary>
+            <div class="inquiry-details">
+              <p>Researching macro-infrastructures, political economy, and the emergence of biennials/triennials across Asia.</p>
+              <ul class="output-list">
+                <li><em>Bangkok Biennial 'Coming Soon' Pavilion</em> (2018)</li>
+                <li><em>Biennials and Hegemony</em> (OnCurating, 2020)</li>
+                <li><em>What Should Biennials Do?</em> (Zine, 2019)</li>
+              </ul>
+            </div>
+          </details>
+        </li>
+
+        <!-- Inquiry 2 -->
+        <li class="inquiry-item">
+          <details>
+            <summary>
+              <strong>Inquiry 2: Cultural Commoning in Thailand</strong>
+            </summary>
+            <div class="inquiry-details">
+              <p>Investigating self-organisation, cultural commoning as resistance, and collective art practices.</p>
+              <ul class="output-list">
+                <li><em>Common Dissent</em> (Reading Group & Publication, 2021)</li>
+                <li><em>Art Organisers as Commoners</em> (Social Inclusion, 2022)</li>
+                <li><em>Lecture at documenta fifteen</em> (Kassel, 2022)</li>
+              </ul>
+            </div>
+          </details>
+        </li>
+
+        <!-- Inquiry 3: Active / Live -->
+        <li class="inquiry-item active-strand">
+          <details open>
+            <summary>
+              <strong>Inquiry 3: Text-Based Commoning & Fieldnotes</strong>
+              <span class="badge">Active / Live</span>
+            </summary>
+            <div class="inquiry-details">
+              <p>Active research on collaborative writing, publishing as method, and spatial fieldwork observations.</p>
+              
+              <!-- Action Links -->
+              <div class="action-links">
+                <a href="#fieldnotes" class="btn">└─ [ Read Fieldnotes ]</a>
+                <a href="#book-club" class="btn">└─ [ inappropriate BOOK CLUB ]</a>
+              </div>
+            </div>
+          </details>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- Verbatim Fieldnotes Stream Section -->
+    <section id="fieldnotes" class="content-section fieldnotes-section">
+      <h2 class="section-title">VERBATIM FIELDNOTES</h2>
+      <p class="section-intro">Observational notes on art spaces, spatial dynamics, and institutional infrastructures.</p>
+
+      <article class="fieldnote-entry">
+        <header class="fieldnote-meta">
+          <span class="fieldnote-id">[FIELDNOTE #001]</span>
+          <span class="fieldnote-location">Bangkok — Site Observation</span>
+          <time datetime="2026-08">Aug 2026</time>
+        </header>
+        <div class="fieldnote-body">
+          <p>Observing movement patterns near the entrance rather than the display walls. Circulation dictated by the air conditioning flow rather than the exhibition layout...</p>
+        </div>
+      </article>
+
+      <!-- Add more <article class="fieldnote-entry"> blocks here as you write -->
+
+    </section>
+
+    <!-- Statement on Ethics & Co-Authorship -->
+    <section class="ethics-box">
+      <h3 class="ethics-title">On Co-Authorship & Collective Work</h3>
+      <p>My projects and research are inherently collective. To present these endeavors as a sole author would feel extractive. Co-authorship acknowledges the shared labor, resources, and intellectual contributions involved across all initiatives.</p>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="site-footer">
+      <p>Contact: <a href="mailto:your-email@example.com">email [at] domain.com</a></p>
+      <p class="copyright">Text-Based Commoning • Open Documentation</p>
+    </footer>
+
+  </main>
+
 </body>
 </html>
