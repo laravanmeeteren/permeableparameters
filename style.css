@@ -322,4 +322,12 @@ details[open] summary::before {
     transform: translateX(-50%);
     width: 200px;
   }
+  .image-credit {
+  font-family: monospace; /* Matches your site's tech/archive font */
+  font-size: 0.75rem;
+  color: #666;             /* Soft grey so it doesn't draw eyes away from the photo */
+  text-align: right;
+  margin-top: 0.35rem;      /* Light breathing room under the image border */
+  margin-bottom: 1.5rem;   /* Space before "INQUIRIES & FIELDWORK" */
+  }
 }
