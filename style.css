@@ -351,4 +351,15 @@ a.meta-badge-link {
     transform: translateX(-50%);
     max-width: 200px;
   }
+   .section-title .hover-thumb {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
 }
+
+.section-title .thumb-preview {
+  top: 120%; /* Position thumbnail right below or alongside the title */
+  left: 0;
+  max-width: 320px; /* Gives the diagram a bit more width to be readable */
+}
+   }
