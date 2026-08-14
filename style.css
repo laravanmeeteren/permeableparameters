@@ -362,4 +362,18 @@ a.meta-badge-link {
   left: 0;
   max-width: 320px; /* Gives the diagram a bit more width to be readable */
 }
+   .site-footer {
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer .copyright {
+  text-align: right;
+}
+   
    }
