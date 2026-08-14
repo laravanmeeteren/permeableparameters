@@ -344,4 +344,9 @@ details[open] summary::before {
     transform: translateX(-50%);
     width: 200px;
   }
+   /* Badge Link Styling */
+a.meta-badge-link {
+  text-decoration: none;
+  display: inline-block;
 }
+   }
