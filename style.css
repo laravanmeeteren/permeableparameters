@@ -198,18 +198,20 @@ details[open] summary::before {
   text-decoration: none;
 }
 
-/* Hover Thumbnail Preview */
+/* Hover Thumbnail Preview Base Styles */
 .hover-thumb {
   position: relative;
   display: inline-block;
 }
 
-.hover-thumb .thumb-preview {
+.thumb-preview {
   display: none;
   position: absolute;
   top: -20px;
   left: 105%; /* Displays thumbnail to the right of the link */
-  width: 250px;
+  max-width: 250px;
+  max-height: 320px;
+  width: auto;
   height: auto;
   border: 1px solid #111111;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
@@ -221,6 +223,11 @@ details[open] summary::before {
 
 .hover-thumb:hover .thumb-preview {
   display: block;
+}
+
+a.meta-badge-link {
+  text-decoration: none;
+  display: inline-block;
 }
 
 /* Badges & Action Buttons */
@@ -337,29 +344,11 @@ details[open] summary::before {
   }
 
   /* Center thumbnail above text on smaller screens */
-  .hover-thumb .thumb-preview {
+  .thumb-preview {
     top: auto;
     bottom: 130%;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
+    max-width: 200px;
   }
-   /* Badge Link Styling */
-a.meta-badge-link {
-  text-decoration: none;
-  display: inline-block;
 }
-   .thumb-preview {
-  display: none;
-  position: absolute;
-  max-width: 280px; /* or 300px */
-  height: auto;
-  z-index: 100;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border: 1px solid #111;
-}
-
-.hover-thumb:hover .thumb-preview {
-  display: block;
-}
-   }
