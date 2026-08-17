@@ -13,23 +13,23 @@ img {
 }
 
 body {
-  background-color: #f7f6f2; /* Off-white paper background */
+  background-color: #f7f6f2; /* Clean paper background */
   color: #111111;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   padding: 2.5rem 1rem;
 }
 
-/* Page Frame Container */
+/* Page Frame Container — Open Layout (No Outer Border) */
 .container {
   max-width: 760px;
   margin: 0 auto;
-  border: 1px solid #111111;
+  border: none; /* Outer black box removed */
   background-color: #f7f6f2;
-  padding: 2.5rem;
+  padding: 1rem 0;
 }
 
-/* Base Link Styles & Accent Color */
+/* Base Link Styles & Vermilion Hover Accent */
 a {
   color: #111111;
   text-decoration: underline;
@@ -42,7 +42,6 @@ a:visited {
   color: #111111;
 }
 
-/* Primary Vermilion Accent (#db2428) on Hover */
 a:hover,
 summary:hover,
 .hover-thumb:hover {
@@ -54,7 +53,7 @@ summary:hover,
 }
 
 /* ==========================================================================
-   Header & Core Thesis Section
+   Header & Identity Section
    ========================================================================== */
 .site-header {
   margin-bottom: 1.5rem;
@@ -103,7 +102,7 @@ summary:hover,
 }
 
 /* ==========================================================================
-   Hero Portrait & Photographer Overlay
+   Hero Portrait & Overlay
    ========================================================================== */
 .hero-image-wrapper {
   position: relative;
@@ -115,7 +114,7 @@ summary:hover,
 
 .hero-image {
   width: 100%;
-  max-height: 540px; /* Constrains height without cropping sides */
+  max-height: 540px;
   object-fit: cover;
   display: block;
 }
@@ -200,7 +199,7 @@ details[open] summary::before {
   margin-bottom: 0.35rem;
 }
 
-/* Hover Thumbnail Preview Base Styles */
+/* Hover Thumbnail Preview Styles */
 .hover-thumb {
   position: relative;
   display: inline-block;
@@ -210,7 +209,7 @@ details[open] summary::before {
   display: none;
   position: absolute;
   top: -20px;
-  left: 105%; /* Displays thumbnail to the right of the link */
+  left: 105%;
   max-width: 250px;
   max-height: 320px;
   width: auto;
@@ -243,65 +242,9 @@ a.meta-badge-link {
   vertical-align: middle;
 }
 
-.action-links {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
-}
-
-.btn {
-  font-family: monospace;
-  font-size: 0.85rem;
-  color: #111111;
-  text-decoration: none;
-  border: 1px solid #111111;
-  padding: 0.35rem 0.65rem;
-  background-color: #ffffff;
-  transition: background-color 0.15s ease;
-}
-
-.btn:hover {
-  background-color: #111111;
-  color: #ffffff;
-}
-
 /* ==========================================================================
    Fieldnotes Stream & Ethics Box
    ========================================================================== */
-.fieldnotes-section {
-  border-top: 1px solid #111111;
-  padding-top: 2rem;
-}
-
-.section-intro {
-  font-size: 0.9rem;
-  color: #555555;
-  margin-bottom: 1.5rem;
-}
-
-.fieldnote-entry {
-  border: 1px solid #111111;
-  background-color: #ffffff;
-  padding: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.fieldnote-meta {
-  font-family: monospace;
-  font-size: 0.8rem;
-  color: #555555;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.85rem;
-}
-
-.fieldnote-body {
-  font-size: 0.95rem;
-  line-height: 1.55;
-}
-
 .ethics-box {
   border: 1px solid #111111;
   padding: 1.25rem;
@@ -347,7 +290,7 @@ a.meta-badge-link {
    ========================================================================== */
 @media (max-width: 680px) {
   .container {
-    padding: 1.25rem;
+    padding: 0.5rem;
   }
 
   .site-footer {
@@ -360,7 +303,6 @@ a.meta-badge-link {
     text-align: left;
   }
 
-  /* Position thumbnail above text on smaller screens */
   .thumb-preview {
     top: auto;
     bottom: 130%;
@@ -368,28 +310,4 @@ a.meta-badge-link {
     transform: translateX(-50%);
     max-width: 200px;
   }
-
-  .section-title .hover-thumb {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-  }
-
-  .section-title .thumb-preview {
-    top: 120%;
-    left: 0;
-    max-width: 320px;
-  }
-   body {
-  background-color: #e8e6df; /* Slightly darker surrounding background */
 }
-
-.container {
-  max-width: 760px;
-  margin: 0 auto;
-  border: 1px solid #111111;
-  background-color: #f7f6f2; /* Sheet stays off-white */
-  padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Subtle paper shadow */
-}
-   }
