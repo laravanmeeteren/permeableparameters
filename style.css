@@ -375,5 +375,32 @@ a.meta-badge-link {
 .site-footer .copyright {
   text-align: right;
 }
+
+   /* Base link style */
+a {
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+/* Accent color on hover for links & expanders */
+a:hover,
+summary:hover,
+.hover-thumb:hover {
+  color: #6512ff;
+}
+
+/* External link arrows accent */
+.arrow-accent {
+  color: #6512ff;
+  font-weight: bold;
+}
+
+/* Active or highlighted badges */
+.meta-badge-active {
+  color: #6512ff;
+  border-color: #6512ff;
+}
    
    }
