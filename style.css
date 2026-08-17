@@ -29,6 +29,30 @@ body {
   padding: 2.5rem;
 }
 
+/* Base Link Styles & Accent Color */
+a {
+  color: #111111;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease;
+}
+
+a:visited {
+  color: #111111;
+}
+
+/* Primary Vermilion Accent (#db2428) on Hover */
+a:hover,
+summary:hover,
+.hover-thumb:hover {
+  color: #db2428;
+}
+
+.arrow-accent {
+  color: #db2428;
+}
+
 /* ==========================================================================
    Header & Core Thesis Section
    ========================================================================== */
@@ -143,6 +167,7 @@ details summary {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  transition: color 0.15s ease;
 }
 
 details summary::-webkit-details-marker {
@@ -173,29 +198,6 @@ details[open] summary::before {
 
 .output-list li {
   margin-bottom: 0.35rem;
-}
-
-/* Clean Monochrome Links */
-.output-list a,
-.inquiry-details a,
-.site-footer a {
-  color: #111111;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
-}
-
-.output-list a:visited,
-.inquiry-details a:visited,
-.site-footer a:visited {
-  color: #111111;
-}
-
-.output-list a:hover,
-.inquiry-details a:hover,
-.site-footer a:hover {
-  color: #666666;
-  text-decoration: none;
 }
 
 /* Hover Thumbnail Preview Base Styles */
@@ -327,7 +329,17 @@ a.meta-badge-link {
   color: #555555;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   font-family: monospace;
+  margin-top: 3rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer .copyright {
+  text-align: right;
 }
 
 /* ==========================================================================
@@ -340,10 +352,15 @@ a.meta-badge-link {
 
   .site-footer {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
+    align-items: flex-start;
   }
 
-  /* Center thumbnail above text on smaller screens */
+  .site-footer .copyright {
+    text-align: left;
+  }
+
+  /* Position thumbnail above text on smaller screens */
   .thumb-preview {
     top: auto;
     bottom: 130%;
@@ -351,57 +368,16 @@ a.meta-badge-link {
     transform: translateX(-50%);
     max-width: 200px;
   }
-   .section-title .hover-thumb {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-}
 
-.section-title .thumb-preview {
-  top: 120%; /* Position thumbnail right below or alongside the title */
-  left: 0;
-  max-width: 320px; /* Gives the diagram a bit more width to be readable */
-}
-   .site-footer {
-  align-items: flex-start;
-  gap: 2rem;
-  margin-top: 5rem;
-}
+  .section-title .hover-thumb {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
 
-.site-footer p {
-  margin: 0;
+  .section-title .thumb-preview {
+    top: 120%;
+    left: 0;
+    max-width: 320px;
+  }
 }
-
-.site-footer .copyright {
-  text-align: right;
-}
-
-   /* Base link style */
-a {
-  color: #111;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease;
-}
-
-/* Base link styling */
-a {
-  color: #111;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease;
-}
-
-/* Hover state for links, summaries, and interactive titles */
-a:hover,
-summary:hover,
-.hover-thumb:hover {
-  color: #db2428;
-}
-
-/* Accent for external arrows */
-.arrow-accent {
-  color: #db2428;
-}
-   
-   }
