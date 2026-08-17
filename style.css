@@ -29,7 +29,7 @@ body {
   padding: 1rem 0;
 }
 
-/* Base Link Styles & Vermilion Hover Accent */
+/* Base link styling */
 a {
   color: #111111;
   text-decoration: underline;
@@ -38,18 +38,18 @@ a {
   transition: color 0.15s ease;
 }
 
-a:visited {
-  color: #111111;
-}
-
+/* ONLY actual links and details summaries turn red on hover */
 a:hover,
 summary:hover,
-.hover-thumb:hover {
-  color: #db2428;
+a.hover-thumb:hover,
+a.meta-badge-link:hover,
+a.meta-badge-link:hover .meta-badge {
+  color: #db2428 !important;
 }
 
-.arrow-accent {
-  color: #db2428;
+/* Non-link thumbnail previews stay dark text on hover */
+span.hover-thumb:hover {
+  color: inherit;
 }
 
 /* ==========================================================================
