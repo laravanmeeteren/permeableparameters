@@ -375,19 +375,5 @@ a.meta-badge-link {
 .site-footer .copyright {
   text-align: right;
 }
-   /* Smooth expander styling & animation */
-details summary {
-  transition: color 0.2s ease;
-}
-
-details[open] summary {
-  margin-bottom: 0.5rem;
-}
-
-.inquiry-details {
-  animation: fadeIn 0.25s ease-in-out;
-}
-
-@keyframes fadeIn
    
    }
