@@ -380,4 +380,16 @@ a.meta-badge-link {
     left: 0;
     max-width: 320px;
   }
+   body {
+  background-color: #e8e6df; /* Slightly darker surrounding background */
 }
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  border: 1px solid #111111;
+  background-color: #f7f6f2; /* Sheet stays off-white */
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Subtle paper shadow */
+}
+   }
