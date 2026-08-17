@@ -384,23 +384,24 @@ a {
   transition: color 0.15s ease;
 }
 
-/* Accent color on hover for links & expanders */
+/* Base link styling */
+a {
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+/* Hover state for links, summaries, and interactive titles */
 a:hover,
 summary:hover,
 .hover-thumb:hover {
-  color: #6512ff;
+  color: #db2428;
 }
 
-/* External link arrows accent */
+/* Accent for external arrows */
 .arrow-accent {
-  color: #6512ff;
-  font-weight: bold;
-}
-
-/* Active or highlighted badges */
-.meta-badge-active {
-  color: #6512ff;
-  border-color: #6512ff;
+  color: #db2428;
 }
    
    }
